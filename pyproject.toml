@@ -1,0 +1,18 @@
+[project]
+name = "flow-matching-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "huggingface-hub>=2.3.0",
+    "ipykernel>=7.4.0",
+    "librosa>=1.0.0",
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.4",
+    "torch>=2.14.1",
+    "torchaudio>=2.11.0",
+    "torchdiffeq>=0.2.5",
+    "vocos>=0.1.0",
+    "x-transformers>=2.31.10",
+]

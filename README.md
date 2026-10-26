@@ -1,42 +1,32 @@
-# :sound: Flow Matching Tutorial :sound:
-
-*Flow matching in audio enhancement.*
-
+# Flow Matching Tutorial 
 ---
 
 ## Prerequisites
 
-### UV
-
-Verify if `uv` is installed in your environment, eg. by:
-
-```bash
-uv --version
-```
-
-If `uv` is not installed, you may install it with `pip`:
+Install `uv` if you don't have it:
 
 ```bash
 pip3 install uv
 ```
 
-or with your system:
-
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
-
 ## Set up
 
-1. Set up the environment with:
+Clone the repo, then install dependencies:
 
 ```bash
-./setup.sh
+uv sync
 ```
 
-After this command, new Jupyter kernel (`flow-matching-uv`) is registered.
+## Run
 
-## Use
+1. Open `tutorial.ipynb` in your Jupyter environment (VS Code, Jupyter Lab, ...).
+2. Select the kernel:
+   - **VS Code**: in "Select kernel" (top-right) pick the project's `.venv`. It's detected automatically.
+   - **Jupyter Lab / Notebook**: register the kernel once, then pick `flow-matching-uv` from the list:
 
-1. Open `tutorial.ipynb` in Jupyter environment (eg. VS Code, Jupyter Lab)
-2. Choose `flow-matching-uv` kernel in the notebook settings (top-right corner).
+     ```bash
+     uv run python -m ipykernel install --user --name flow-matching-uv
+     ```
+---
+
+## Read through the notebook and run the cells one by one.
